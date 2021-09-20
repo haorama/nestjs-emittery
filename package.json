@@ -1,0 +1,16 @@
+{
+  "name": "@haorama/nestjs-emittery",
+  "version": "0.0.1",
+  "description": "Nestjs event emitter alternative using emittery",
+  "main": "index.js",
+  "repository": "https://github.com/haorama/nestjs-emittery",
+  "author": "Michael Lazuardy",
+  "license": "MIT",
+  "peerDependencies": {
+    "@nestjs/common": "^7.0.0 || ^8.0.0",
+    "@nestjs/core": "^7.0.0 || ^8.0.0"
+  },
+  "dependencies": {
+    "emittery": "^0.10.0"
+  }
+}

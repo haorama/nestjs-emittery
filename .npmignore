@@ -1,0 +1,29 @@
+# IDE
+.vscode
+
+# source
+lib
+tests
+index.ts
+package-lock.json
+tslint.json
+tsconfig.json
+.prettierrc
+nestcli.json
+tsconfig.build.json
+.test
+nodemon.json
+.env
+yarn-error.log
+yarn.lock
+.eslintignore
+.prettierignore
+.eslintrc.js
+
+# github
+.github
+CONTRIBUTING.md
+renovate.json
+
+# ci
+.circleci
