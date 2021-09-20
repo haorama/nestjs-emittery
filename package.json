@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "description": "Nestjs event emitter alternative using emittery",
   "main": "index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/haorama/nestjs-emittery",
   "author": "Michael Lazuardy",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "eslint \"lib/**/*.ts\" --fix",
     "build": "rimraf -rf dist && tsc -p tsconfig.json"
