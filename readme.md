@@ -60,3 +60,21 @@ this.emitteryService.emit(
 
 //eventName = 'OrderCreatedEvent'
 ```
+
+## Listening to Events
+To declare an event listener, decorate a method with the @OnEvent() decorator preceding the method definition containing the code to be executed, as follows:
+
+```typescript
+import { OnEvent } from '@haorama/nestjs-emittery';
+
+@OnEvent('order.created')
+handleOrderCreatedEvent(payload: OrderCreatedEvent) {
+  // handle and process "OrderCreatedEvent" event
+}
+
+//if using class as name
+@OnEvent(OrderCreatedEvent.name)
+handleOrderCreatedEvent(payload: OrderCreatedEvent) {
+  // handle and process "OrderCreatedEvent" event
+}
+```
