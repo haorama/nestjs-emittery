@@ -3,14 +3,36 @@
   "version": "0.0.1",
   "description": "Nestjs event emitter alternative using emittery",
   "main": "index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/haorama/nestjs-emittery",
   "author": "Michael Lazuardy",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint \"lib/**/*.ts\" --fix",
+    "build": "rimraf -rf dist && tsc -p tsconfig.json"
+  },
   "peerDependencies": {
     "@nestjs/common": "^7.0.0 || ^8.0.0",
     "@nestjs/core": "^7.0.0 || ^8.0.0"
   },
   "dependencies": {
     "emittery": "^0.10.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^8.0.6",
+    "@nestjs/core": "^8.0.6",
+    "@types/node": "^16.9.4",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
   }
 }
