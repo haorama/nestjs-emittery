@@ -2,7 +2,7 @@ type DebugLogger<EventData, Name extends keyof EventData> = (
   type: string,
   debugName: string,
   eventName?: Name,
-  eventData?: EventData[Name],
+  eventData?: EventData[Name]
 ) => void;
 
 interface DebugOptions<EventData> {

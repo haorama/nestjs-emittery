@@ -1,3 +1,3 @@
-export * from './emittery.service';
-export * from './emittery.module';
-export * from './decorators';
+export * from "./emittery.service";
+export * from "./emittery.module";
+export * from "./decorators";

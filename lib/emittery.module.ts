@@ -1,8 +1,8 @@
-import { DynamicModule, Module, Provider } from '@nestjs/common';
-import { DiscoveryModule } from '@nestjs/core';
-import { EmitteryService } from '.';
-import { EmitteryModuleOptions } from './interfaces';
-import { ListenerLoader } from './listener.loader';
+import { DynamicModule, Module, Provider } from "@nestjs/common";
+import { DiscoveryModule } from "@nestjs/core";
+import { EmitteryService } from ".";
+import { EmitteryModuleOptions } from "./interfaces";
+import { ListenerLoader } from "./listener.loader";
 
 @Module({})
 export class EmitteryModule {
