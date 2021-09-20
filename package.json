@@ -1,8 +1,8 @@
 {
   "name": "@haorama/nestjs-emittery",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Nestjs event emitter alternative using emittery",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/haorama/nestjs-emittery",
   "author": "Michael Lazuardy",
