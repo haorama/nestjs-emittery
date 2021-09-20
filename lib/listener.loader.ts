@@ -2,12 +2,12 @@ import {
   Injectable,
   OnApplicationBootstrap,
   OnApplicationShutdown,
-} from "@nestjs/common";
-import { DiscoveryService, Reflector, MetadataScanner } from "@nestjs/core";
-import { InstanceWrapper } from "@nestjs/core/injector/instance-wrapper";
-import { EmitteryService } from "./emittery.service";
-import { EVENT_LISTENER_METADATA } from "./constants";
-import { ListenerMetadata } from "./interfaces";
+} from '@nestjs/common';
+import { DiscoveryService, Reflector, MetadataScanner } from '@nestjs/core';
+import { InstanceWrapper } from '@nestjs/core/injector/instance-wrapper';
+import { EmitteryService } from './emittery.service';
+import { EVENT_LISTENER_METADATA } from './constants';
+import { ListenerMetadata } from './interfaces';
 
 @Injectable()
 export class ListenerLoader
@@ -17,7 +17,7 @@ export class ListenerLoader
     private readonly discoveryService: DiscoveryService,
     private readonly emittery: EmitteryService,
     private readonly reflector: Reflector,
-    private readonly metadataScanner: MetadataScanner
+    private readonly metadataScanner: MetadataScanner,
   ) {}
 
   async onApplicationBootstrap() {
@@ -43,7 +43,7 @@ export class ListenerLoader
           prototype,
           (key: string) => {
             return this.subscribeListener(instance, key);
-          }
+          },
         );
       });
   }
@@ -51,7 +51,7 @@ export class ListenerLoader
   private subscribeListener(instance: any, key: any) {
     const listener = this.reflector.get<ListenerMetadata>(
       EVENT_LISTENER_METADATA,
-      instance[key]
+      instance[key],
     );
 
     if (!listener) {
