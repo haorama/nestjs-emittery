@@ -12,5 +12,9 @@
   },
   "dependencies": {
     "emittery": "^0.10.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^8.0.6",
+    "@nestjs/core": "^8.0.6"
   }
 }
